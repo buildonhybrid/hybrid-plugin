@@ -1,4 +1,4 @@
-# @elizaos/plugin-hybrid
+# @buildonhybrid/hybrid-plugin
 
 A plugin that brings together the power of AI and cryptocurrency data, enabling intelligent analysis and insights within the ElizaOS ecosystem.
 
@@ -24,7 +24,7 @@ For more information about Hybrid's capabilities and architecture, visit [Hybrid
 ## Installation
 
 ```bash
-pnpm install @elizaos/plugin-hybrid
+pnpm install @buildonhybrid/hybrid-plugin
 ```
 
 ## Configuration
