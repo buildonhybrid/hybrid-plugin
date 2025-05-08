@@ -16,7 +16,10 @@ export async function getTools(
     header.append("x-api-key", apiKey);
     const options = { headers: header };
 
-    const response = await fetch(`${serviceUrl}/tools`, options);
+    const response = await fetch(
+      `${serviceUrl}/api/hybrid-plugin/tools`,
+      options
+    );
 
     if (!response.ok) {
       throw new Error(`Failed to fetch tools schema: ${response.statusText}`);
@@ -55,7 +58,10 @@ export async function getToolResponse(
       body: JSON.stringify({ args: JSON.parse(args) }),
     };
 
-    const response = await fetch(`${serviceUrl}/${toolName}`, options);
+    const response = await fetch(
+      `${serviceUrl}/api/hybrid-plugin/${toolName}`,
+      options
+    );
 
     if (!response.ok) {
       throw new Error(`Failed to fetch tools schema: ${response.statusText}`);
