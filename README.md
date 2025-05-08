@@ -37,7 +37,7 @@ pnpm install @buildonhybrid/hybrid-plugin
 
 ```typescript
 HYBRID_API_KEY=<Your Hybrid API key>
-HYBRID_PLUGIN_URL=<Your Hybrid service URL>
+HYBRID_PLUGIN_URL="https://api.buildonhybrid.com"
 ```
 
 ## Usage
