@@ -13,6 +13,7 @@ export async function getTools(
     const header = new Headers();
 
     header.append("accept", "application/json");
+    header.append("Content-Type", "application/json");
     header.append("x-api-key", apiKey);
     const options = { headers: header };
 
@@ -50,7 +51,9 @@ export async function getToolResponse(
     const header = new Headers();
 
     header.append("accept", "application/json");
+    header.append("Content-Type", "application/json");
     header.append("x-api-key", apiKey);
+    console.log("Request body:", JSON.stringify({ args: JSON.parse(args) }));
     const options = {
       method: "POST",
       headers: header,
