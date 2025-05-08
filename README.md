@@ -1,5 +1,9 @@
 # @buildonhybrid/hybrid-plugin
 
+<div align="center">
+  <img src="images/display-card.png" alt="Hybrid Plugin Banner" width="800"/>
+</div>
+
 A plugin that brings together the power of AI and cryptocurrency data, enabling intelligent analysis and insights within the ElizaOS ecosystem.
 
 ## Description
@@ -132,3 +136,47 @@ This plugin integrates with and builds upon several key technologies:
 ## License
 
 This plugin is part of the Eliza project. See the main project repository for license information.
+
+## Using with ElizaOS
+
+This plugin can be used with ElizaOS to enhance your AI agent's capabilities with cryptocurrency data and analysis. Here's how to integrate it:
+
+### Installation in ElizaOS
+
+1. **Add to Project Dependencies**
+   Add the plugin to your agent's `package.json`:
+   ```json
+   {
+     "dependencies": {
+       "@buildonhybrid/hybrid-plugin": "workspace:*"
+     }
+   }
+   ```
+
+2. **Configure in Character**
+   Import the plugin in your agent's `character.json`:
+   ```json
+   {
+     "plugins": [
+       "@buildonhybrid/hybrid-plugin"
+     ]
+   }
+   ```
+
+3. **Environment Setup**
+   Make sure to set up the required environment variables in your ElizaOS configuration:
+   ```typescript
+   HYBRID_API_KEY=<Your Hybrid API key>
+   HYBRID_PLUGIN_URL=<Your Hybrid service URL>
+   ```
+
+### Example Usage in ElizaOS
+
+Once configured, your ElizaOS agent can use the plugin's capabilities through natural language commands. For example:
+
+- "What's the latest news about Bitcoin?"
+- "Show me the current market trends"
+- "Analyze this transaction hash: 0x..."
+- "What's the sentiment on social media for Ethereum?"
+
+The plugin will automatically process these requests and provide relevant cryptocurrency data and insights.
