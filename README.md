@@ -33,6 +33,15 @@ pnpm install @buildonhybrid/hybrid-plugin
 
 ## Configuration
 
+### Obtaining an API Key
+
+To use the Hybrid plugin, you'll need to obtain an API key from the [Hybrid Developer Portal](https://developer-portal.buildonhybrid.com/). Follow these steps:
+
+1. Visit the [Hybrid Developer Portal](https://developer-portal.buildonhybrid.com/)
+2. Sign up or log in to your account
+3. Click on the "Create API Key" button
+4. Copy the generated key for use in your environment variables
+
 ### Environment Variables
 
 ```typescript
