@@ -28,8 +28,14 @@ For more information about Hybrid's capabilities and architecture, visit [Hybrid
 ## Installation
 
 ```bash
-pnpm install @buildonhybrid/hybrid-plugin
+# First, install @elizaos/core (required peer dependency)
+pnpm add @elizaos/core
+
+# Then install the hybrid plugin
+pnpm add @buildonhybrid/hybrid-plugin
 ```
+
+**Note:** This plugin requires `@elizaos/core` to be installed in your project. Make sure to install it before installing the hybrid plugin.
 
 ## Configuration
 
