@@ -1,15 +1,23 @@
 {
   "name": "@buildonhybrid/hybrid-plugin",
-  "version": "0.25.6-alpha.3",
-  "main": "dist/index.js",
+  "version": "0.25.6-alpha.4",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "type": "module",
-  "types": "dist/index.d.ts",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "dependencies": {
     "tsup": "8.3.5"
   },
   "scripts": {
-    "build": "tsup --format esm --dts",
-    "dev": "tsup --format esm --dts --watch"
+    "build": "tsup --format esm,cjs --dts",
+    "dev": "tsup --format esm,cjs --dts --watch"
   },
   "peerDependencies": {
     "@elizaos/core": "^0.25.9",
